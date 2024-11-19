@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-position: center 20px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
+
+header {
+    width: 85vw;
+    margin: 0 auto;
+    margin-bottom: .5vw;
+    position: relative;
+}
+
+header::after {
+    content: " ";
+    position: absolute;
+    background-color: #2C9303;
+    right: 0;
+    top: 10vw;
+    width: 94%;
+    height: 3.3vw;
+    clip-path: polygon(0 0, 99% 15%, 99.2% 100%);
+}
+
+header::before {
+    content: " ";
+    position: absolute;
+    background-color: #1D6904;
+    right: 0;
+    top: 11vw;
+    width: 85%;
+    height: 4.6vw;
+    clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
+}
+
+header .logos {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 5vw;
+}
+
+header .logos img {
+    height: 8vw;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 6.3vw;
+    font-size: 160%;
+    padding: 0 5vw;
+}
+
+header p {
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    width: 85vw;
+    margin: 0 auto;
+    margin-bottom: .5vw;
+    padding: 2vw;
+    columns: 2;
+    column-gap: 1.5vw;
+}
+
+footer {
+    border: 5px;
+    height: 6vw;
+    width: 85vw;
+    margin: 0 auto;
+    margin-bottom: .5vw;
+    position: relative;
+}
+
+footer::after {
+    content: " ";
+    position: absolute;
+    background-color: #2C9303;
+    left: 0;
+    top: 2vw;
+    width: 94%;
+    height: 3.3vw;
+    clip-path: polygon(99.2% 100%, 1% 85%, 0 0);
+}
+
+footer::before {
+    content: " ";
+    position: absolute;
+    background-color: #1D6904;
+    left: 0;
+    top: 0vw;
+    width: 85%;
+    height: 4.6vw;
+    clip-path: polygon(99.4% 100%, 0.7% 37%, 0 0);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        columns: 1;
+    }
+}
